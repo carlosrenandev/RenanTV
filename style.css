@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background: linear-gradient(to left, #1d1c2b, #141417);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.links a:hover {
+    color: #8176ff;
+}
+
+header button {
+    width: 207px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #8176ff;
+    color: white;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+header button:hover {
+    background-color: #6e62ff;
+}
+
+.hamburguer {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburguer span {
+    display: flex;
+    flex-direction: column;
+    width: 28px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #6e62ff;
+    margin: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.lista-canais {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:  20px;
+    margin-top: 10rem;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.texto h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    width: 650px;
+}
+
+.texto span {
+    color: #8176ff;
+}
+
+.descricao {
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.botoes button {
+    width: 238px;
+    background-color: #8176ff;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    font-size: 19px;
+    transition: all 0.2s ease-in-out;
+}
+
+.botoes button:hover {
+    background-color: #6e62ff;
+}
+
+.botoes p {
+    color: white;
+    width: 140px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.botoes p:hover {
+    color: #8176ff;
+}
+
+.imagem {
+    position: relative;
+}
+
+.imagem img:nth-child(1) {
+    position: absolute;
+    top: -88px;
+    left: 250px;
+}
+
+.imagem img:nth-child(1):hover {
+    animation: movimantacao 2s ease-in-out infinite alternate;
+}
+
+@keyframes movimantacao {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+.asista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15rem;
+}
+
+.listas h2 {
+    color: white;
+    font-size: 50px;
+}
+
+.listas p {
+    color: #d4d4d4;
+    width: 650px;
+}
+
+.cards {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card h3 {
+    color: #8176ff;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 16px;
+    width: 520px;
+}
+
+.card img {
+    background-color: #8176ff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.playerweb {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15rem;
+}
+
+.imagens-playerweb {
+    position: relative;
+}
+
+.playerinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.playerinfo h2 {
+    color: white;
+    font-size: 35px;
+    width: 400px;
+}
+
+.playerinfo p {
+    color: #d4d4d4;
+    width: 500px;
+    font-size: 16px;
+}
+
+.playerinfo button {
+    width: 138px;
+    padding: 10px;
+    border: none;
+    background-color: #8176ff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-size: 17px;
+}
+
+.playerinfo button:hover {
+    background-color: #6e62ff;
+}
+
+.imagens-playerweb img:nth-child(1) {
+    position: absolute;
+    top: 350px;
+    left: -450px;
+    box-shadow: 0 0 10px 0 #6e62ff;
+}
+
+.imagens-playerweb img:nth-child(1):hover {
+    animation: movimantacao 2s ease-in-out infinite alternate;
+}
+
+.imagens-playerweb img:nth-child(2) {
+    position: absolute;
+    top: 150px;
+    left: -400px;
+    z-index: -1;
+}
+
+.planos-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+    gap: 2rem;
+}
+
+.planos-info h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.planos-info p {
+    color: #d4d4d4;
+    width: 500px;
+    text-align: center;
+}
+
+.valores-cards {
+    margin-top: 10rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 150px;
+    grid-template-columns: repeat(auto-fit, 450px);
+    margin-bottom: 4rem;
+}
+
+.card-valor {
+    background: linear-gradient(to right, #1e1d24 , #221f35 , #292554);
+    width: 410px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #201f31;
+    transition: all 0.3s ease-in-out;
+}
+
+.mensalidade {
+    text-align: center;
+    position: relative;
+}
+
+.mensalidade::after {
+    content: " ";
+    width: 350px;
+    height: 2px;
+    background-color: #464462;
+    border-radius: 3px;
+    position: absolute;
+    top: 137px;
+    left: 0;
+}
+
+.mensalidade h3 {
+    color: #8176ff;
+    font-size: 30px;
+}
+
+.mensalidade h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.vantagens {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    color: #d4d4d4;
+    height: 562.97px;
+}
+
+.vantagem-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.botao-valor button{
+    text-align: center;
+}
+
+.card-valor button {
+    margin-top: 8rem;
+    margin-left: 1rem;
+    width: 325px;
+    padding: 14px;
+    color: white;
+    background-color: #8176ff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-valor button:hover {
+    background-color: #6e62ff;
+}
+
+div.card-valor:nth-child(1):hover, div.card-valor:nth-child(3):hover {
+    border: 3px solid #6e62ff;
+}
+
+div.card-valor:nth-child(2) {
+    background: linear-gradient(to right, rgb(118, 19, 230), #6e62ff);
+}
+
+div.card-valor:nth-child(2) button  {
+    background-color: white;
+    color: #6e62ff;
+}
+
+div.card-valor:nth-child(2) .mensalidade h3{
+    color: white;
+}
+
+div.card-valor:nth-child(2) .vantagens {
+    color: white;
+}
+
+div.card-valor:nth-child(2) .mensalidade::after {
+    background-color: white;
+}
+
+div.card-valor:nth-child(2) button:hover {
+    background-color: #292554;
+    color: white;
+}
+
+@media (max-width: 1440px) {
+    .imagens-playerweb img:nth-child(2) {
+        width: 400px;
+        top: -160px;
+        left: -250px;
+    }
+
+    .imagens-playerweb img:nth-child(1) {
+        top: -20px;
+        left: -300px;
+        width: 200px;
+    } 
+
+    .imagens-playerweb img:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagem img:nth-child(1) {
+        width: 150px;
+        top: -40px;
+        left: 180px;
+    }
+
+    .imagem img:nth-child(2) {
+      width: 350px;
+    }
+
+    .texto h1 {
+        font-size: 40px;
+    }
+
+    .asista img {
+        width: 350px;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .listas h2 {
+        font-size: 20px;
+    }
+
+    .listas p {
+        width: 500px;
+    }
+
+    .cards {
+       margin-top: 2rem;
+       gap: 2rem;
+    }
+
+    .card h3{
+   font-size: 18px;
+    }
+
+    .card p {
+        width: 400px;
+    }
+
+    .playerinfo p {
+        width: 400px;
+    }
+
+    .imagens-playerweb img:nth-child(2) {
+        width: 320px;
+        left: -200px;
+    }
+
+    .imagens-playerweb img:nth-child(1) {
+        width: 110px;
+        top: -50px;
+        left: -230px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto h1 {
+        width: 350px;
+        font-size: 30px;
+    }
+
+    .texto p {
+        width: 350px;
+    }
+
+    .botoes button {
+        padding: 5px;
+    }
+
+    .botoes p {
+        width: 150px;
+    }
+
+    .imagem img:nth-child(1) {
+          left: 120px;
+    }
+
+    .imagem img:nth-child(2) {
+        width: 300px;
+    }
+
+    .asista img {
+        width: 280px;
+    }
+
+    .listas {
+        width: 350px;
+    }
+
+    .listas p{
+        width: 340px;
+        font-size: 13px;
+    }
+
+    .card p {
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .playerinfo p{
+     font-size: 13px;
+     width: 290px;
+    }
+
+    .playerinfo h2 {
+        font-size: 20px;
+    }
+
+    .playerinfo button {
+        padding: 3px;
+    }
+
+    .imagens-playerweb img:nth-child(1) {
+        top: 5px;
+    }
+
+    .imagens-playerweb img:nth-child(2) {
+        width: 280px;
+        left: -220px;
+        top: -98px;
+    }
+}
+
+@media (max-width: 425px) {
+    header img {
+        width: 120px;
+    }
+
+    .links, header button {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    header.menu .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(108, 3, 245);
+        padding: 20px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    header.menu .links::after {
+        content: "ÁREA DO CLIENTE";
+        color: white;
+        background-color: #201f31;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .hamburguer.menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.menu span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburguer.menu span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .lista-canais {
+        flex-direction: column;
+    }
+
+    .texto {
+        align-items: center;
+        text-align: center;
+
+        padding-bottom: 10rem;
+    }
+
+    .botoes button {
+        width: 150px;
+    }
+
+    .asista {
+        flex-direction: column;
+    }
+
+    .asista img {
+        margin-bottom: 5rem;
+    }
+
+    .listas h2, p {
+        text-align: center;
+    }
+
+    .cards img {
+        margin-top: 5rem;
+    }
+
+    .card h3 {
+        text-align: center;
+    }
+
+    .playerweb {
+        flex-direction: column;
+    }
+
+    .playerinfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+
+    .imagens-playerweb img:nth-child(1) {
+        left: 50px;
+    }
+
+    .imagens-playerweb img:nth-child(2) {
+        left: -130px;
+    }
+
+    .planos-info p {
+        width: 320px;
+    }
+
+    .card-valor {
+        margin-left: 3.5rem;
+        width: 350px;
+    }
+
+    .mensalidade::after {
+        left: -10px;
+        width: 324px;
+    }
+
+    .card-valor button {
+        margin-left: -0.7rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .playerinfo h2 {
+        width: 350px;
+    }
+
+    .card-valor {
+        width: 300px;
+    }
+
+    .mensalidade::after {
+        width: 275px;
+    }
+
+    .card-valor {
+        margin-left: 5rem;
+    }
+
+    .card-valor button {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 220px;
+        padding: 8px;
+    }
+
+    .vantagem-info {
+        font-size: 13px;
+    }
+
+    div.card-valor:nth-child(2) .mensalidade h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        justify-content: space-between;
+        padding: 20px 10px;
+    }
+
+    .texto p {
+        width: 310px;
+    }
+
+    .texto {
+        width: 315px;
+    }
+
+    .texto h1 {
+        width: 310px;
+    }
+
+    .botoes p {
+        width: 150px;
+    }
+
+    .botoes {
+        gap: 1rem;
+        width: 290px;
+    }
+
+    .listas h2 {
+        width: 250px;
+        margin: 3.2rem;
+    }
+
+    .listas {
+        width: 320px;
+    }
+
+    .listas p {
+        width: 300px;
+        margin-left: 0.7rem;
+    }
+
+    .cards {
+        width: 320px;
+    }
+
+    .card p  {
+        width: 220px;
+    }
+
+    .card {
+        gap: 0;
+        margin-left: 1.8rem;
+    }
+
+    .playerinfo h2 {
+        width: 320px;
+    }
+
+    .imagens-playerweb img:nth-child(1) {
+        left: 20px;
+    }
+
+    .imagens-playerweb img:nth-child(2) {
+        left: -137px;
+    }
+
+    .card-valor {
+        width: 250px;
+    }
+
+    .planos-info p {
+        padding: 0 20px;
+    }
+
+    .mensalidade h3 {
+        font-size: 27px;
+    }
+
+    .mensalidade::after {
+        width: 226px;
+    }
+
+    .vantagem-info p {
+        font-size: 10px;
+    }
+
+    div.card-valor:nth-child(2) .mensalidade h3 {
+        font-size: 24px;
+    }
+
+    .card-valor {
+        margin-left: 6.7rem;
+    }
+
+    .card-valor button {
+        margin-left: -0.5rem;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .card p { 
+        width: 220px;
+        padding: 0 5px;
+    }
+}
